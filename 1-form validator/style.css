@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Titillium+Web:wght@200&display=swap');
+
+
+* {
+    /* avoid padding affect the width of element */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fafb; 
+    font-family: 'Ma Shan Zheng', cursive;
+    font-family: 'Titillium Web', sans-serif;
+/* all the direct child will be flex item, in this case is div
+    The reason why use felx is we can easily put the stuff in the middle*/
+    display: flex; 
+    /* center the item */
+    align-items: center;
+    justify-content: center;
+
+    /* center vertically  viewport hight*/
+    min-height: 100vh;
+
+    margin: 0;
+    text-shadow: 0 0 5px #558abb;
+  
+}
+
+.container {
+    border: black solid;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 15px 10px #558abb;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    /* because the label is inline, but we want to display block 
+      The lable item will be on the top of the imput */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    /* The error message will be the bottom of imput */
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    /* if success, the input border will be green */
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+/* If you wann to position some element absolute the parent element must be relative */
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* hide the error message */
+    visibility: hidden;
+    /* display node just collapse the element */
+    display: none;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
