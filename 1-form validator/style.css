@@ -91,7 +91,7 @@ h2 {
     /* hide the error message */
     visibility: hidden;
     /* display node just collapse the element */
-    display: none;
+    /* display: none; */
 }
 
 .form-control.error small {
