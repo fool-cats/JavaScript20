@@ -12,3 +12,6 @@
 
 
 
+## Mini Project
+
+<img src="README.assets/image-20220619095056212.png" alt="image-20220619095056212" style="zoom:50%;" />
