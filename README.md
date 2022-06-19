@@ -23,3 +23,13 @@
 
 
 <img src="README.assets/image-20220619144508420.png" alt="image-20220619144508420"  />
+
+
+
+
+
+## Mini Project 6: Menu slider
+
+
+
+![image-20220619200823721](README.assets/image-20220619200823721.png)
