@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* center the boxes under the parent container*/
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    padding: 20px;
+    /* auto is the rest of width and height */
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+  }
+
+  aside {
+    /* padding width included in the width of the container*/
+    padding: 10px 20px;  
+    /* display the button in column 
+    because any width of two button will 
+    greater than 250px, It is flex box*/
+    width: 250px;
+    border-right: 1px solid #111;
+  }
+
+
+  button {
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 3px #111;
+    border-radius: 20px;
+    /* column button */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  main {
+    flex: 1;
+    padding: 10px 20px;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+    display: flex;
+    /* separate */
+    justify-content: space-between;
+
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+
+
+  /* for javascript */
+  h3 {
+    background-color: #fff;
+    border-bottom: 1px solid #111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 20px 0 0;
+  }
+  
+  .person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
