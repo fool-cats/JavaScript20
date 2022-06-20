@@ -33,3 +33,11 @@
 
 
 ![image-20220619200823721](README.assets/image-20220619200823721.png)
+
+
+
+## Mini Project 7: Hangman
+
+
+
+![image-20220620164112942](README.assets/image-20220620164112942.png)
